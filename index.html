@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aitia: Transparency and accountability in UK personal insolvency and financial vulnerability">
+  <title>Aitia — Financial Transparency and Accountability</title>
+  <style>
+    :root {
+      --ink: #182026;
+      --muted: #5f6f73;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --line: #d9ded9;
+      --primary: #2f6f73;
+      --primary-dark: #224f52;
+      --sage: #6f8f72;
+      --focus: #f4c430;
+      --radius: 9px;
+      --shadow: 0 12px 32px rgba(24, 32, 38, .08);
+      --max: 1040px;
+      --s1: 4px;
+      --s2: 8px;
+      --s3: 12px;
+      --s4: 16px;
+      --s5: 24px;
+      --s6: 32px;
+      --s7: 44px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--paper); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--paper), #f5f4ed 540px, var(--paper));
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      letter-spacing: 0;
+    }
+
+    .shell {
+      width: min(var(--max), 100%);
+      margin: 0 auto;
+      padding: var(--s6) var(--s5) var(--s7);
+    }
+
+    header {
+      padding: var(--s7) 0 var(--s6);
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1, h2, h3 { margin: 0 0 var(--s3); line-height: 1.15; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: var(--s5); }
+    h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-top: var(--s7); }
+    h3 { font-size: 1.15rem; }
+    p { margin: 0 0 var(--s3); }
+
+    .lead {
+      max-width: 760px;
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      color: var(--muted);
+      margin-bottom: var(--s6);
+    }
+
+    section {
+      margin: var(--s7) 0;
+    }
+
+    .divider {
+      height: 2px;
+      background: var(--line);
+      margin: var(--s7) 0;
+      max-width: 100px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--s6);
+      margin-bottom: var(--s5);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: var(--s5);
+      margin: var(--s5) 0;
+    }
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      border-bottom: 2px solid var(--focus);
+      transition: color .2s ease;
+    }
+
+    a:hover { color: var(--primary); }
+
+    button, .button {
+      display: inline-block;
+      min-height: 44px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      padding: 10px 18px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+    .button.primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .button.primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s3);
+      margin-top: var(--s5);
+    }
+
+    .muted { color: var(--muted); }
+    .small { font-size: .92rem; }
+
+    footer {
+      margin-top: var(--s7);
+      padding: var(--s5) 0;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    ul, ol {
+      margin-top: 0;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .shell { padding: var(--s5) var(--s4) var(--s6); }
+      h1 { margin-bottom: var(--s4); }
+      section { margin: var(--s5) 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1>Aitia</h1>
+      <p class="lead">Transparency and accountability in UK personal insolvency and financial vulnerability.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Our Commitment</h2>
+        <p>We are committed to enhancing transparency and accountability in the UK's personal insolvency system and the wider landscape of financial vulnerability. Grounded in the public interest, we use only open data, process no personal information, and design all tools to support—not replace—regulatory oversight. By publishing clear indicators and accessible briefings, we aim to make the outcomes of debt policy visible, verifiable, and open to scrutiny.</p>
+        <p>Our initial focus was the IVA Protocol 2025, but our broader mission is to track systemic distress across low-income households, communities in persistent arrears, and groups underserved by existing support mechanisms.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Why We Exist</h2>
+        <p>The outcomes of regulated debt solutions are often hidden from public view. Each year, tens of thousands enter IVAs—yet we know little about who completes them, who fails, or whether the system treats vulnerable clients fairly.</p>
+        <p>Aitia exists to change that. Through transparent indicators and simple visual tools, we make regulatory outcomes visible, measurable, and open to challenge.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Our Approach to Modelling and Risk</h2>
+        <p>This project began as an experiment in predictive modelling—using neural networks and the logic of expected goals (xG) to detect early signs of insolvency. The aim was to measure pressure, not just outcomes, and to anticipate IVA failures before they occurred.</p>
+        <p>While this remains a long-term interest, our current focus is not prediction but monitoring. We now publish clear, real-time indicators—such as council tax arrears, surges in benefit claims, IVA failure rates, and access to advice. These are not forecasts but warning signals—designed to help charities, councils, regulators, and the public identify pressure points in the financial system.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Tools</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Money Stress Index</h3>
+            <p>A private, browser-based check for financial pressure, resilience, and support needs. Uses open constructs from FCA, ONS, and psychometric frameworks.</p>
+            <p class="small muted">No data is saved, submitted, or sent anywhere.</p>
+            <p><a href="money_stress_index_v07.html" class="button primary" style="display: inline-block; margin-top: var(--s3);">Open tool</a></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Get in touch</h2>
+        <p>Questions, feedback, or collaboration interest?</p>
+        <p><a href="mailto:hello@aitia.uk">hello@aitia.uk</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Aitia — Public interest financial transparency. Not regulated advice.</p>
+      <p><small>All tools are prototypes. See individual tool documentation for scope, limitations, and caveats.</small></p>
+    </footer>
+  </div>
+</body>
+</html>
